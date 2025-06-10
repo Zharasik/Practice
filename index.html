@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Life Garant </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="homepagecss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,91.8,200;1,91.8,200&display=swap" rel="stylesheet">
+ 
 </head>
 <body>
     <header> 
@@ -15,7 +18,7 @@
             <nav>
                 <ul>
                     <li> <a href="#"> о нас </a> </li>
-                    <li> <a href="#">каталог</a > </li>
+                    <li> <a href="#catalog">каталог</a > </li>
                     <li> <a href="#">портфолио</a> </li>
                     <li> <a href="#">блог</a> </li>
                     <li> <a href="#">услуги</a> </li>
@@ -26,18 +29,52 @@
     </header>
     <section class = "hero">
         <div class = "overlay">
-            <h1> Поднимайте комфорт на новый уровень!</h1>
-            <p> Современные технологии подьема для комфорта, надежности и эффективной работы </p>
-            <a href="#" class="btn">Обратный звонок →</a>
+            <h1> Поднимайте комфорт <br> на новый уровень!</h1>
+            <p> Современные технологии подьема для комфорта,<br> надежности и эффективной работы </p>
+            <a href="#" class="btn">Обратный звонок &nbsp;&nbsp;&nbsp;→</a>
         </div>
     </section>
-    <div class ="floating-buttons">
-        <a href="#" class="call">Обратный звонок</a>
-        <a href="#" class="whatsapp">написать в whatsapp</a>
+    <div class="floating-buttons">
+        <a href="#" class="call">
+            <i class="bi bi-telephone-fill d-block mb-1"></i>
+            <small>Обратный звонок</small>
+        </a>
+        <a href="#" class="whatsapp">
+            <i class="bi bi-whatsapp d-block mb-1"></i>
+            <small>написать в whatsapp</small>
+        </a>
     </div>
-    <section class = "catalog">
-         <h2>КАТАЛОГ ТОВАРОВ</h2>
-    </section>
+
+    <section id="catalog" class="catalog">
+  <h2>Каталог товаров</h2>
+  <div class="catalog-grid">
+    <div class="catalog-item">
+      <img src="passenger.png" alt="Пассажирский лифт">
+      <span>ПАССАЖИРСКИЙ ЛИФТ</span>
+    </div>
+    <div class="catalog-item">
+      <img src="panoromic.png" alt="Панорамный лифт">
+      <span>ПАНОРАМНЫЙ ЛИФТ</span>
+    </div>
+    <div class="catalog-item">
+      <img src="hospital.png" alt="Больничный лифт">
+      <span>БОЛЬНИЧНЫЙ ЛИФТ</span>
+    </div>
+    <div class="catalog-item">
+      <img src="cargo.png" alt="Грузовой лифт">
+      <span>ГРУЗОВОЙ ЛИФТ</span>
+    </div>
+    <div class="catalog-item">
+      <img src="auto.png" alt="Автомобильный лифт">
+      <span>АВТОМОБИЛЬНЫЙ ЛИФТ</span>
+    </div>
+    <div class="catalog-item">
+      <img src="escalator.png" alt="Эскалаторы и траволаторы">
+      <span>ЭСКАЛАТОРЫ И ТРАВОЛАТОРЫ</span>
+    </div>
+  </div>
+</section>
+
 </body>
 
 </html>
