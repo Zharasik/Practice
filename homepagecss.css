@@ -83,10 +83,10 @@ nav a {
   display: inline-block;
   margin-top: 10px;
   background: #1D90F1;
-  padding: 15px 45px;
+  padding: 25px 55px;
   color: white;
   text-decoration: none;
-  font-size: 12px; 
+  font-size: 18px; 
   text-transform: uppercase;
   border-radius: 112px;  
 }
@@ -251,3 +251,24 @@ display: inline-block;
             font-size: 1.5rem;
             color: var(--text-white);
         }
+.portfolio{
+  background-color: #ffffff;
+  color:#282828;
+}
+.portfolio h2{
+  text-transform: uppercase;
+  text-align: left;
+  padding: 80px 0;
+  font-size: 45px;
+  font-weight: 370;
+}
+.btn-second{
+  font-size: 15px;
+  padding: 17px 50px;
+}
+.portfolio-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   padding: 0 90px;
+}
