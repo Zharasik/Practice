@@ -322,7 +322,7 @@ display: inline-block;
   align-items: center;
   justify-content: space-between;
   max-width: 1000px;            
-  width: 50%; }
+  width: 100%; }
 
 .portfolio-item:hover {
             transform: translateY(-5px);
@@ -447,43 +447,116 @@ width: 100%;
 background: rgba(42, 131, 209, 0.3);
 transform: rotate(45deg);
 }
-.infocomp{
+.infocomp {
     display: flex;
+     position: relative;
     height: 100vh;
-    background:  url('homepage/comp.png') center/cover no-repeat;
-    justify-content: center;
-    align-items: flex-start;
-   
+    background: url('homepage/comp.png') center/cover no-repeat;
+    justify-content: center;    
+  align-items: center; 
+     height: 100vh;
+     padding: 40px 20px;
+  color: white;
+ z-index: 1;
 }
-.infocomp h2{
- font-size: 45px;
-    font-weight: 300;
-    margin-bottom: 11px;
-    line-height: 61px;
-    text-transform: uppercase;
+.infocomp::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); 
+  z-index: -1;
+}
 
-     
+.info-grid {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
 }
-.infocomp-item.large{
- font-size: 14px;
-    font-weight: 300;
-   max-width: 100;
-    line-height: 20px;
- 
+
+.info-left {
+  flex: 1;
+  max-width: 800px;
+  padding-top: 50px; 
+   transform: translateX(-50px);
 }
-.info-grid{
-display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
+
+.info-left h2 {
+  font-size: 45px;
+  font-weight: 370;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
+
+.info-left p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 300;
+  max-width: 470px;
+}
+.info-item:nth-child(3) p,
+.info-item:nth-child(4) p {
+  
+  max-width: 1000px;
+}       
+.info-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 80px;
+  gap: 0px 50px;
+  position: relative;
+  transform: translateX(-10px);
+  
+  
+}
+.info-right::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 30px;
+  left: 50%;
+  width: 1px;
+  background-color: rgb(255, 255, 255);
+}
+
 .info-item {
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  gap: 10px;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 25px;
+   text-align: left;
    
 }
 
 .info-item p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.4;
+ margin-top: 12px;
+  font-size: 15x;
+  line-height: 1.4;
+  font-weight: 300;
+    max-width: 180px;
+}
+.info-item:nth-child(-n+2)::after {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
+  width: 80%;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.info-item img {
+  
+  width: 50px;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
