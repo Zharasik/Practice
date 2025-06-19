@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     color: aliceblue;
-      font-family: "Noto Sans", sans-serif;
+      font-family: 'Circe', sans-serif;
       scroll-behavior: smooth;
 }
 
@@ -16,7 +16,6 @@ header{
     justify-content: space-between;
     z-index: 10;
      box-sizing: border-box;
-       font-family: "Roboto", sans-serif;
    
 }
 
@@ -36,6 +35,7 @@ nav a {
       text-decoration: none;
       text-transform: uppercase;
       font-size: 17px;
+      font-weight: 400;
       color: white;
       padding: 0 8px;
       border-bottom: 1px solid transparent;
@@ -67,7 +67,7 @@ nav a {
 }
 .hero h1 {
    font-size: 50px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 11px;
     line-height: 61px;
     text-transform: uppercase;
@@ -75,7 +75,7 @@ nav a {
     font-stretch: 10%;   
 }
 .hero p {
-  font-size: 18px;
+  font-size: 23px;
   margin-bottom: 10px; 
   line-height: 33px;
   font-weight: 400;
@@ -88,8 +88,10 @@ nav a {
   padding: 22px 53px;
   color: white;
   text-decoration: none;
-  font-size: 15px; 
+  font-size: 16px; 
   font-weight: 500;
+  letter-spacing: 2%;
+  line-height: 100%;
   text-transform: uppercase;
   border-radius: 112px;  
 }
@@ -114,21 +116,23 @@ nav a {
   position: fixed;
   right: 0;
   gap: 5px;
-  bottom: 100px;
+  bottom: 80px;
   display: flex;
   flex-direction: column;
-  z-index: 9;
+  z-index: 2;
   top: 50%;
 }
 .call, .whatsapp {
   background: #6D6D6D;
   color: #ffffff;
-  padding: 10px 10px;
+  padding: 15px 10px;
   font-size: 12px;
   text-align: center;
   text-decoration: none;
-  width: 95px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
+  font-weight: 400;
+  line-height: 1.2;
 }
 .whatsapp {
   background: #25D366;
@@ -186,7 +190,7 @@ nav a {
   transform: translateX(-50%);
   color: white;
   font-size: 21px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 6px 12px;
   text-transform: uppercase;
   text-align: center;
@@ -272,7 +276,8 @@ display: inline-block;
   text-transform: uppercase;
   font-size: 45px;
   font-weight: 370;
-  margin-left: 10px;
+  transform: translateY(85%);
+  transform: translateX(10%);
 }
 .btn-second{
   font-size: 15px;
@@ -283,7 +288,7 @@ display: inline-block;
   display: flex;
   justify-content: space-between;
   align-items: center;
-     margin-top: 40px;
+     margin-top: 35px;
 }
 .portfolio-grid {
  display: grid;
@@ -559,4 +564,112 @@ transform: rotate(45deg);
   height: auto;
   display: block;
   object-fit: cover;
+}
+.service {
+  background: linear-gradient(to right, #45aefc, #189dfc);
+  padding: 60px 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.callback-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.callback-row h2 {
+  color: white;
+  font-size: 43px;
+  text-transform: uppercase;
+  font-weight: 320;
+  margin: 0;
+  transform: translateX(100px);
+}
+
+form {
+  display: flex;
+  gap: 20px;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+input {
+  background: white;
+  padding: 15px 35px;
+  margin-top: 10px;
+  transform: translateX(-210px);
+  font-size: 12px;
+  font-weight: 500;
+  color:#5F5F5F;
+  text-transform: uppercase;
+  border-radius: 112px;
+  height: 50px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  
+}
+
+button {
+  background-color: #282828;
+  padding: 14px 100px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 112px;
+  cursor: pointer;
+  
+  transform: translateX(-200px);
+  
+}
+
+button:hover {
+  background-color: #000000;
+}
+
+.services-section {
+    background-color: #fff;
+   
+    padding: 25px;
+}
+
+.services-section h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.services-description {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.service-item h3 {
+    color: #3498db;
+    font-size: 16px;
 }
