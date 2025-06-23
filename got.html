@@ -1,0 +1,58 @@
+{% set home = journal.record %}
+{% set journals = journals.records %}
+{% set categories = blogCategories.categories %}
+
+
+<div class="layout first-section">
+    <div class="container">
+        <div class="layout_wrapper">
+            <h1 class="title">Bulletin of the Turkic Academy</h1>
+        </div>
+    </div>
+    <img src="/storage/app/media/banner.jpg" alt="Журналы" class="banner">
+</div>
+
+<main class="main">
+    <section class="journal_page">
+        <div class="container">
+            <div class="home_section">
+                <div class="journal_btns_side">
+                    <div class="home_section_title">Journals</div>
+                    <div class="journal_btns">
+                        {% for item in journals %}
+                        <a href="/zhurnal/{{item.slug}}" class="journal_btn">{{item.title}}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <div class="content_center">
+                    <div class="journal_slider">
+                    {% for item in journals %}
+                        <div class="journal_slide">
+                            <div class="journal_image"><img src="{{item.image|media}}" alt=""></div>
+                        </div>
+                    {% endfor %}
+                    </div>
+                    <div class="section-title">{{home.title}}</div>
+                    <div class="post-text">
+                        {{home.text|raw}}
+                    </div>
+                </div>
+                
+                <div class="articles_side">
+                    <a href="#modalArticle" data-toggle="modal" class="bt blue_bt">Submit an article</a>
+                    <div class="home_section_title">Articles</div>
+                    {% for record in categories %}
+                    <div class="article_item">
+                        <div class="article_name">
+                            <b class="article_category"><a href="/articles/{{record.slug}}">{{record.name}}:</a> </b>
+                            <a href="/article/{{record.posts[0].slug}}">{{record.posts[0].title}}</a>
+                        </div>
+                        <div class="article_views">Views: {{record.posts[0].views}}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+</main>

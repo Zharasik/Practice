@@ -588,7 +588,7 @@ transform: rotate(45deg);
 
 .callback-row h2 {
   font-size: 45px;
-  font-weight: 400;
+  font-weight: 350;
   color: white;
   margin: 0;
   margin-left: 150px;
@@ -615,6 +615,7 @@ input {
 }
 
 button {
+    position: relative;
   background-color: #282828;
   color: white;
   padding: 18px 60px;
@@ -623,15 +624,34 @@ button {
   border: none;
   border-radius: 112px;
   cursor: pointer;
-  width: 300px;
-  margin-right: 60px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
+.btn-arrow {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn-text {
+  flex: 1;
+  text-align: left;
+  right: 24px;
+  transform: translateX(30px );
+}
 button:hover {
   background-color: #000000;
 }
+.arrow {
+  transition: transform 0.3s ease;
+}
 
+.button:hover .arrow {
+  transform: translateX(4px);
+}
 .services-section {
     background-color: #fff;
    
@@ -641,30 +661,26 @@ button:hover {
 .services-section h2 {
     color: #2c3e50;
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 45px;
     text-align: center;
 }
 
 .services-description {
     text-align: center;
-    margin-bottom: 15px;
-    font-size: 15px;
+    font-size: 24px;
+    color: #2c3e50;
 }
 
 .services-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 100px;
+   
+}
+.services-item{
+    align-items: center;
 }
 
-.service-item {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 6px;
-    text-align: center;
-}
-
-.service-item h3 {
-    color: #3498db;
-    font-size: 16px;
+.advantage-elevator{
+  background-color: #282828;
 }

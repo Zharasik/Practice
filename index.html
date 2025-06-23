@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,91.8,200;1,91.8,200&display=swap" rel="stylesheet">
- 
 </head>
 <body>
     <header> 
@@ -250,7 +249,13 @@
       <form>
         <input type="text" placeholder="Имя">
         <input type="tel" placeholder="Телефон">
-        <button type="submit">ОТПРАВИТЬ →</button>
+        <button type="submit" class="button"> <span class="btn-text">ОТПРАВИТЬ</span>
+  <span class="btn-arrow">
+    <svg class="arrow" width="21" height="24" viewBox="0 0 40 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="3" y1="12" x2="32" y2="12" />
+      <polyline points="23 3, 34 12, 23 23" />
+    </svg>
+  </span></button>
       </form>
     </div>
   </div>
@@ -258,24 +263,29 @@
         <div class="container">
         <section class="services-section">
             <h2>НАШИ УСЛУГИ</h2>
-            <p class="services-description">Наша компания оказывает услуги по монтажу, обслуживанию и поставке Лифтов, Эскалаторов и Травалаторов.</p>
+            <p class="services-description">Наша компания оказывает услуги по монтажу, обслуживанию <br> и поставке <span style="font-weight: 700;">Лифтов, Эскалаторов и Травалаторов.</span></p>
             
             <div class="services-list">
                 <div class="service-item">
-                    <h3>СЕРВИСНОЕ ОБСЛУЖИВАНИЕ</h3>
+                    <img src="service/1.png" alt="Сервисное обслуживание">
                 </div>
                 <div class="service-item">
-                    <h3>МОНТАЖНЫЕ УСЛУГИ</h3>
+                   <img src="service/2.png" alt="Монтажные услуги">   
                 </div>
                 <div class="service-item">
-                    <h3>УСЛУГИ ПО МОДЕРНИЗАЦИИ</h3>
+                   <img src="service/3.png" alt="Услуги по модернизации">
                 </div>
                 <div class="service-item">
-                    <h3>УСЛУГИ ПО ПОСТАВКЕ</h3>
+                   <img src="service/4.png" alt="Услуги по доставке">
                 </div>
             </div>
         </section>
     </div>
+    <section class="advantage-elevator">
+      <div class="title-elevator">
+        <h2>Преимущества современных лифтов</h2>
+      </div>
+    </section>
 </body>
 
 </html>
