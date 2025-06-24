@@ -681,6 +681,70 @@ button:hover {
     align-items: center;
 }
 
+
 .advantage-elevator{
   background-color: #282828;
+  display: flex;
+  position: relative;
+}
+.advantage-elevator h2{
+  margin-top: 130px;
+  text-align: left;
+  font-size: 45px;
+  font-weight: 100;
+  text-transform: uppercase;
+  transform: translateX(-150px);
+}
+.advantage-elevator p{
+  transform: translateX(-150px);
+  font-size: 20px;
+  width: 750px;
+}
+.list-elevator{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.elevator-item{
+  padding: 75px 50px;
+}
+
+.blog h2{
+  font-size:45px;
+  font-weight: 400;
+  color:#000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+}
+.blog-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2px;
+}
+.blog-item{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+}
+.blog-item img{
+    width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+.blog-item span{
+  color:#000000;
+  font-size: 20px;
+  text-align: left;
+  padding: 0 10px;
+}
+.blog-item p{
+    font-size: 14px;
+  text-align: left;
+  margin-top: 10px;
+  padding: 0 10px;
+  background: linear-gradient(to bottom, #555555, #19191900);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
