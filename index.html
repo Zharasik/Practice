@@ -12,22 +12,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wdth,wght@0,91.8,200;1,91.8,200&display=swap" rel="stylesheet">
+ <script defer src="script.js"></script>
 </head>
 <body>
     <header> 
-            <div class="logo"></div>
+            <div class="logo">
+              <a href="index.html">
+                <img src="homepage/logo.png" alt="logo">
+              </a>
+            </div>
             <nav>
                 <ul>
-                    <li> <a href="#"> о нас </a> </li>
-                    <li> <a href="#catalog">каталог</a > </li>
-                    <li> <a href="#">портфолио</a> </li>
-                    <li> <a href="#">блог</a> </li>
-                    <li> <a href="#">услуги</a> </li>
-                    <li> <a href="#">контакты</a> </li>
+                    <li> <a href="about.html"> о нас </a> </li>
+                    <li> <a href="catalog.html">каталог</a > </li>
+                    <li> <a href="portfolio.html">портфолио</a> </li>
+                    <li> <a href="blog.html">блог</a> </li>
+                    <li> <a href="service.html">услуги</a> </li>
+                    <li> <a href="contacts.html">контакты</a> </li>
                 </ul>
             </nav>
             <div class="lang"> kz | ru </div>
     </header>
+    <main>
     <section class = "hero">
         <div class = "overlay">
             <h1> Поднимайте комфорт <br> на новый уровень!</h1>
@@ -312,7 +318,74 @@
         <p>Это текст о компании, он необходим для Вашего сайта. Информацию нужно предоставить.</p>
       </div>
       </div>
+      <h2>Наши партнеры</h2>
+      <div class="blog-list2">
+        <div class="blog-item2">
+          <img src="blog/1.png" alt="1">
+        </div>
+        <div class="blog-item2">
+          <img src="blog/2.png" alt="2">
+        </div>
+        <div class="blog-item2">
+          <img src="blog/3.png" alt="3">
+        </div>
+        <div class="blog-item2">
+          <img src="blog/4.png" alt="4">
+        </div>
+        <div class="blog-item2">
+          <img src="blog/5.png" alt="5">
+        </div>
+      </div>
     </section>
+    </main>
+   <footer>
+  <div class="footer-container">
+    <div class="footer-column logo-column">
+      <img src="homepage/logo.png" alt="logo">
+    </div>
+    <div class="footer-column">
+      <h4>КАТАЛОГ</h4>
+      <ul>
+        <li>Пассажирский лифт</li>
+        <li>Панорамный лифт</li>
+        <li>Больничный лифт</li>
+        <li>Грузовой лифт</li>
+        <li>Автомобильный лифт</li>
+        <li>Эскалаторы и травалаторы</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>УСЛУГИ</h4>
+      <ul>
+        <li>Сервисное обслуживание</li>
+        <li>Монтаж лифтов</li>
+        <li>Ремонт лифтов</li>
+        <li>Поставка лифтов</li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>КОМПАНИЯ</h4>
+      <ul>
+            <li><a href="about.html">О компании</a></li>
+          <li><a href="portfolio.html">Портфолио</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>НАШИ КОНТАКТЫ</h4>
+      <ul>
+        <li><i class="bi bi-geo-alt-fill"></i> г. Шымкент, бульвар Кунаева 83/1</li>
+        <li><i class="bi bi-telephone-fill"></i> +7 (775) 429 03 09</li>
+        <li><i class="bi bi-telephone-fill"></i> +7 (771) 237 88 81</li>
+        <li><i class="bi bi-envelope-fill"></i> info@liftgarant.kz</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>ABC DESIGN</p>
+  </div>
+</footer>
 </body>
 
 </html>

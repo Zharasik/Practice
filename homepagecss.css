@@ -42,10 +42,9 @@ nav a {
       transition: border-bottom 0.3s ease;
      
     }
-.logo {
+.logo img {
   width: 100px; 
   height: 70px;
-  background: url('homepage/logo.png') center/contain no-repeat;
 }
 
 .hero{
@@ -747,4 +746,70 @@ button:hover {
   background: linear-gradient(to bottom, #555555, #19191900);
    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.blog-list2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 5px;
+  padding: 30px 0 50px;
+}
+.blog-item2{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 40px;
+}
+footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 40px 20px 20px;
+  
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  min-width: 160px;
+}
+
+.logo-column img {
+  width: 120px;  
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  opacity: 0.85;
+  color: #DADADA;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: left;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+.footer-bottom p{
+  margin-top: 20px;
 }

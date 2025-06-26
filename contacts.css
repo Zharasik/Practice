@@ -1,0 +1,25 @@
+.contacts {
+  padding: 80px 50px;
+  background-color: #fff;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.contacts h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.contacts p {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacts i {
+  margin-right: 10px;
+  color: #1D90F1;
+}
